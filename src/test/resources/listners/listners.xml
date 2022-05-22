@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ganesh Test Automation Lab">
+    <listeners>
+<!--        <listener class-name="testng.listener.ITestListenerExample"></listener>-->
+        <listener class-name="testng.rerunfailtest.IAnnotationTransformRetryListner"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="selenium">
+        <classes>
+            <class name="testng.assertion.SoftAssertExample"/>
+            <class name="testng.listener.ITestListnerRunDemo"/>
+            <class name="testng.rerunfailtest.RerunAutomationScripts"/>
+        </classes>
+    </test>
+</suite>
